@@ -1,0 +1,50 @@
+
+<%- include('../includes/head.ejs') %>
+</head>
+<%- include('../includes/nav.ejs') %>
+
+
+
+    <div class="w3-container w3-white w3-card  w3-content w3-padding-24" style="max-width: 600px; margin-top: 80px;">
+        <h2  class="w3-text-theme w3-center">Create your blog</h2>
+
+                <div class="w3-container" >
+                <form action="/add-blog" method="POST"  >
+
+                    <div class="w3-padding ">
+                        <label for="title"> Title</label>
+                        <input type="text" name="title" id="title" value="">
+                        <br>
+                    </div>
+                    <br>
+
+                    <div class="w3-padding ">
+                        <label for="imageUrl"> Image Url</label>
+                        <input type="text" name="imageUrl" id="imageUrl" value="">
+                        <br>
+                    </div>
+                    <br>
+
+                    <div class="w3-padding ">
+                        <label for="imageUrl"> Description</label>
+                        <textarea type="text" name="description" id="description" value="" rows="6"> </textarea>
+                        <br>
+                    </div>
+
+                    <!-- TAGS -->
+                    <!-- <div class="w3-padding" >
+                        <label for="formInput#text">Tags</label> <br>
+                        <textarea class="" name="newtags" placeholder="Add tags"> </textarea>
+                    </div> -->
+
+                    <input type="submit" class="w3-button w3-theme w3-margin-top w3-center " value="Submit"></input>
+
+                </form>
+                </div>
+    </div>
+
+<%- include ('../includes/end.ejs') %>
+
+
+
+
